@@ -11,13 +11,6 @@ $sql="select naam, bericht from contact";
 
 $result = mysqli_query($conn,$sql);
 
-echo '<table border="0" cellspacing="2" cellpadding="2"> 
-      <tr> 
-          <td> <font face="Arial">Naam</font> </td> 
-          <td> <font face="Arial">Bericht</font> </td> 
-
-      </tr>';
-
 if ($result = $conn->query($sql)) {
     while ($row = $result->fetch_assoc()) {
         $field1name = $row["naam"];
@@ -32,8 +25,3 @@ if ($result = $conn->query($sql)) {
     }
     $result->free();
 }
-
-//$name =$_POST['name'];
-//$message =$_POST['message'];
-//
-//var_dump($name, $message);

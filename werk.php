@@ -7,8 +7,10 @@
 <meta charset="UTF=8">
 <header>
     <nav class="topnav">
-        <a><img src="logo.png" class="logo" onclick="loadContent('indexx.html')"></a>
+        <img src="logo.png" class="logo">
         <ul>
+            <li> <a href="homepage.php">home</a></li>
+
             <li><a href="over.php">over</a></li>
 
             <li><a href="school.php">school</a></li>
@@ -40,17 +42,17 @@
 </div>
 
 <footer>
-    <li><h3>Email</h3></li>
-    <li>Maarten@sitskoorn.tel</li>
-
-
-
-
-
-        <ul>
-            <li><h3>github</h3> </li>
-            <li><a href="https://github.com/Dev-Maarten">https://github.com</a></li>
-        </ul>
+    <ul>
+        <li><h3>Email</h3></li>
+        <li>Maarten@sitskoorn.tel</li>
+    </ul>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/maarten-sitskoorn-624974336/">linkedin</a></li>
+    </ul>
+    <ul>
+        <li><h3>github</h3> </li>
+        <li><a href="https://github.com/Dev-Maarten">https://github.com</a></li>
+    </ul>
 
     </div>
 </footer>

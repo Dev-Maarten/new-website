@@ -1,5 +1,5 @@
 <?php
-include_once "dbconnection.php";
+//include_once "dbconnection.php";
 $db_server = "localhost";
 $db_username = "Maarten";
 $db_password = "Snoes2425!";
@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $post = mysqli_real_escape_string($conn, $_POST['post']);
 
 
-    $query = ("insert into contact (naam, bericht) values ('$name', '$post');");
+    $query = ("insert into blog (naam, bericht) values ('$name', '$post');");
 
     if (mysqli_query($conn, $query)) {
         echo "Values have been inserted";
@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 }
 
-$query = "SELECT naam, bericht FROM contact";
+$query = "SELECT naam, bericht FROM blog";
 $result = mysqli_query($conn, $query);
 
 mysqli_close($conn);
@@ -34,10 +34,3 @@ mysqli_close($conn);
 
 
  ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
